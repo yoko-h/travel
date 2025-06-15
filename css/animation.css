@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+
+/*-------------------
+タテフェードイン
+-------------------*/
+.fade .up {
+    opacity: 0;
+    transition : all 100ms;
+    transform : translate(0, 500px);
+}
+.fade.show .up {
+    opacity: 1;
+    transition : all 100ms;
+    transform : translate(0, 0);
+}
+/*-------------------
+ヨコスライドイン
+-------------------*/
+.fade .left{
+    opacity: 0;
+    transition : all 50ms;
+    transition-timing-function: ease-out;
+    transform : translate(300px, 0);
+}
+.fade.show .left{
+    opacity: 1;
+    transform : translate(0, 0);
+}
+.fade .right{
+    opacity: 0;
+    transition : all 50ms;
+    transition-timing-function: ease-out;
+    transform : translate(-300px, 0);
+}
+.fade.show .right{
+    opacity: 1;
+    transform : translate(0, 0);
+}
+.fade .to_left{
+    opacity: 0;
+    transition : all 100ms;
+    transform : translate(300px, 0);
+}
+.fade.show .to_left{
+    opacity: 1;
+    transform : translate(0, 0);
+}
+
+.fade .to_right{
+    opacity: 0;
+    transition : all 100ms;
+    transform : translate(-300px, 0);
+}
+.fade.show .to_right{
+    opacity: 1;
+    transform : translate(0, 0);
+}
+/*-------------------
+斜めイン
+-------------------*/
+.fade .to_up-left{
+    opacity: 0;
+    transition : all 100ms;
+    transform : translate(300px, 50px);
+}
+.fade.show .to_up-left{
+    opacity: 1;
+    transition : all 100ms;
+    transform : translate(0, 0);
+}
+.fade .to_up-right{
+    opacity: 0;
+    transition : all 100ms;
+    transform : translate(-300px, 50px);
+}
+.fade.show .to_up-right{
+    opacity: 1;
+    transition : all 100ms;
+    transform : translate(0, 0);
+}
+/*-------------------
+ゆっくり
+-------------------*/
+.fade.show .slow {
+    transition: all 300ms;
+    transition-timing-function: ease-in;
+}
+
+
+
+
+/* 画面内に入った状態 */
+.fade {
+    opacity: 0;
+    transition: all 100ms;
+}
+.fade.show {
+    display: block;
+    opacity : 1;
+}
+
+/* 時間差つける */
+.fade.show .cast_01 {
+    transition-delay:0.1s;
+}
+.fade.show .cast_02 {
+    transition-delay:0.2s;
+}
+.fade.show .cast_03 {
+    transition-delay:0.3s;
+}
+.fade.show .cast_04 {
+    transition-delay:0.4s;
+}
+
+.fade.show .list_01 {
+    transition-delay:0.3s;
+}
+.fade.show .list_02 {
+    transition-delay:0.4s;
+}
+.fade.show .list_03 {
+    transition-delay:0.5s;
+}
+.fade.show .list_04 {
+    transition-delay:0.6s;
+}
+
+.fade.show .fadein_01 {
+    transition-delay:0.2s;
+}
+.fade.show .fadein_02 {
+    transition-delay:0.3s;
+}
+.fade.show .fadein_03 {
+    transition-delay:0.6s;
+}
+.fade.show .fadein_04 {
+    transition-delay:0.8s;
+}
+.fade.show .fadein_05 {
+    transition-delay:1.0s;
+}
+.fade.show .fadein_06 {
+    transition-delay:1.2s;
+}
+.fade.show .fadein_07 {
+    transition-delay:1.4s;
+}
+
+
+/*-------------------
+.fade_last
+-------------------*/
+/* 画面外にいる状態 下から上 */
+.fade_last .up {
+    opacity: 0;
+    transition : all 100ms;
+    transform : translate(0, 100px);
+}
+.fade_last.show .up {
+    opacity: 1;
+    transition : all 100ms;
+    transform : translate(0, 0);
+}
+/* 画面内に入った状態 */
+.fade_last {
+    opacity: 0;
+    transition: all 100ms;
+}
+.fade_last.show {
+    display: block;
+    opacity : 1;
+}
+/* 時間差つける */
+.fade_last.show .fadein_01 {
+    transition-delay:0.5s;
+}
+.fade_last.show .fadein_02 {
+    transition-delay:0.8s;
+}
+
+
+.cnt_21 img.act_1 {
+    animation: act_1 0.1s ease-in-out 0s infinite alternate;
+}
+
+@keyframes act_1 {
+    0% {width: 80%;}
+    50% {width: 79.5%;}
+    100% {width: 80%;}
+}
+
+
